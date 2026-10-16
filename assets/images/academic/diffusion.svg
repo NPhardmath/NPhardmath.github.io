@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 520 340">
+  <title>Mean-squared displacement scaling in log-log coordinates</title>
+  <g fill="none" stroke="#dce5ed" stroke-width="1"><path d="M65 267H478M65 267V35M65 210H478M65 153H478M65 96H478M165 35V267M265 35V267M365 35V267"/></g>
+  <g fill="none" stroke-width="2.6"><path d="M76 253L435 184" stroke="#ac9463"/><path d="M76 253L435 119" stroke="#809fb7" stroke-dasharray="7 5"/><path d="M76 253L435 54" stroke="#255c86"/></g>
+  <g font-family="Segoe UI,Arial,sans-serif" fill="#425d74" font-size="12"><text x="73" y="26">log MSD</text><text x="426" y="293">log t</text><text x="273" y="65" fill="#255c86">Superdiffusion · α &gt; 1</text><text x="289" y="135" fill="#627f95">Normal diffusion · α = 1</text><text x="293" y="211" fill="#907840">Subdiffusion · α &lt; 1</text></g>
+  <text x="79" y="322" font-family="Georgia,serif" font-size="19" fill="#173f63">MSD ∝ t<tspan dy="-8" font-size="12">α</tspan></text>
+  <text x="280" y="320" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#72879a">Conceptual scaling diagram</text>
+</svg>

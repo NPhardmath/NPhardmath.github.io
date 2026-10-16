@@ -12,3 +12,6 @@ end
 
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
+
+# Windows has no system zoneinfo database; Jekyll needs this for Asia/Shanghai.
+gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin, :jruby]

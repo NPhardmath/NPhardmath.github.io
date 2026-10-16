@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 520 340">
+  <title>Ensemble and time averages</title>
+  <rect x="342" y="43" width="37" height="213" fill="#e0eaf2"/>
+  <rect x="58" y="159" width="405" height="39" fill="#eee8dc" opacity=".8"/>
+  <g fill="none" stroke="#d8e2ea"><path d="M57 42v215h414M57 100h414M57 151h414M57 202h414"/></g>
+  <g fill="none" stroke-width="2.3" stroke-linejoin="round"><path d="M60 115l22-12 18 9 23-25 21 6 20-9 21 14 20-27 22 10 20-8 20 14 22-24 20 7 20-8 20 12 22-17 20 5 20-18 22 7 20-16 21 5" stroke="#396d94"/><path d="M60 173l22 10 18-7 23 9 21-20 20 4 21-10 20 7 22-12 20 9 20-8 22 17 20-6 20 14 20-8 22 5 20-16 20 8 22-17 20 6 21-8" stroke="#aa8e59"/><path d="M60 226l22-8 18 4 23 13 21-7 20 4 21-20 20 10 22-11 20 15 20-7 22 12 20-17 20 8 20-12 22 9 20-15 20 4 22-11 20 3 21-8" stroke="#83a6bd"/></g>
+  <g fill="#396d94"><circle cx="360" cy="68" r="4"/><circle cx="360" cy="173" r="4"/><circle cx="360" cy="214" r="4"/></g>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#425d74"><text x="326" y="29">Ensemble average</text><text x="70" y="189" fill="#866e3f">Time average →</text><text x="478" y="262">t</text><text x="40" y="41">x</text><text x="70" y="302">Across particles</text><text x="267" y="302">Across observation time</text></g>
+  <path d="M239 288v22" stroke="#c5d4df"/>
+</svg>

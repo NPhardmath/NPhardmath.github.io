@@ -1,0 +1,24 @@
+---
+layout: academic
+title: "团队"
+english_title: "People"
+permalink: /team/
+intro: "围绕随机建模、计算数学与统计物理开展研究，在理论推导、算法实现和交叉应用中共同探索。"
+---
+<p class="example-notice"><strong>成员信息示例</strong> {{ site.data.team.notice }}</p>
+<div class="team-groups">
+  {% for group in site.data.team.groups %}
+  <section class="team-group" aria-labelledby="team-group-{{ forloop.index }}">
+    <div class="section-heading"><h2 id="team-group-{{ forloop.index }}">{{ group.title }}</h2><span class="section-english" lang="en">{{ group.english }}</span></div>
+    <div class="member-grid">
+      {% for member in group.members %}
+      <article class="member">
+        <span class="member-initial" aria-hidden="true">{{ member.name | slice: 0 }}</span>
+        <div><h3>{{ member.name }}</h3><p><span class="member-field">{{ group.field }}</span>{{ member.detail }}</p></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+<section class="team-recruitment"><h2>招生与交流</h2><p>招收数学学术型硕士、应用统计专业型硕士研究生，欢迎对物理、生物和 Machine learning 交叉研究感兴趣的同学联系。</p><a class="text-link" href="mailto:xdwang14@njust.edu.cn">xdwang14@njust.edu.cn <span aria-hidden="true">↗</span></a></section>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="theme-color" content="#173f63">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/academic/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳至正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="王旭东个人学术主页">
+        <span class="brand-name">王旭东<span lang="en">Xudong Wang</span></span>
+        <span class="brand-school">南京理工大学 · 数学与统计学院</span>
+      </a>
+      <nav aria-label="主导航">
+        {% for item in site.data.navigation.main %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="site-main{% if page.home %} home-main{% endif %}">
+    {% unless page.home %}
+    <header class="page-heading">
+      <p class="eyebrow" lang="en">{{ page.english_title }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.intro %}<p class="page-intro">{{ page.intro }}</p>{% endif %}
+    </header>
+    {% endunless %}
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© {{ site.time | date: '%Y' }} 王旭东 <span>南京理工大学数学与统计学院</span></p>
+      <p><a href="https://orcid.org/0000-0001-7987-2685">ORCID</a><a href="https://math.njust.edu.cn/wxd/list.htm">学院主页</a><a href="mailto:xdwang14@njust.edu.cn">联系我</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+---
+layout: academic
+title: "方向介绍"
+english_title: "Research"
+permalink: /research/
+intro: "围绕复杂系统中的随机运动，连接 Stochastic modeling、Statistical physics 与 Anomalous diffusion。"
+---
+<nav class="section-nav" aria-label="研究方向索引"><a href="#stochastic">随机模型与算法</a><a href="#physics">统计物理</a><a href="#diffusion">反常扩散</a><a href="#ai">Machine learning &amp; AI</a></nav>
+
+<section class="research-detail" id="stochastic" aria-labelledby="stochastic-title">
+  <div class="research-text">
+    <p class="eyebrow">01 / <span lang="en">Stochastic modeling &amp; numerical methods</span></p>
+    <h2 id="stochastic-title">随机模型与算法</h2>
+    <p>以 Random walk、Continuous-time random walk（CTRW）与 Langevin equation 为工具，将微观粒子的随机运动转化为可分析、可计算的数学模型，研究等待、记忆、随机扩散率和外力如何共同塑造输运行为。</p>
+    <p>结合 Monte Carlo 仿真与 Fractional PDEs 的数值方法，从样本轨迹与概率密度两个层面交叉验证模型。相关工作涉及 Galerkin spectral method、Discontinuous Galerkin method 及自适应求解。</p>
+    <ul class="topic-list"><li>随机过程建模与轨迹仿真</li><li>非局部算子与分数阶方程数值求解</li><li>微观随机过程与宏观 PDE 的联系</li></ul>
+    <p class="related-reading">相关论文：<a href="{{ '/publications/#work-229818822' | relative_url }}">带固定机制的 CTRW</a> · <a href="{{ '/publications/#work-99771480' | relative_url }}">Discontinuous Galerkin 方法</a></p>
+  </div>
+  <figure><img src="{{ '/assets/images/academic/modeling.svg' | relative_url }}" width="520" height="340" loading="lazy" alt="随机粒子轨迹通过统计汇总形成概率密度，并与宏观方程相连接的示意图。"><figcaption>从轨迹到分布，再到方程。模型关系示意。</figcaption></figure>
+</section>
+
+<section class="research-detail" id="physics" aria-labelledby="physics-title">
+  <div class="research-text">
+    <p class="eyebrow">02 / <span lang="en">Statistical physics</span></p>
+    <h2 id="physics-title">统计物理</h2>
+    <p>关注复杂环境中的 Ergodicity、Ergodicity breaking、Aging 与非平衡动力学。围绕 Random diffusivity，比较 Ensemble-averaged MSD 与 Time-averaged MSD（TAMSD），理解单条轨迹的时间统计与大量粒子的总体统计何时一致。</p>
+    <p>研究扩散率相关结构、势场约束与随机时间变换对统计观测量的影响，并将 Statistical physics 的随机交换思想延伸至财富分布与不平等指标等复杂系统问题。</p>
+    <ul class="topic-list"><li>随机扩散率模型的遍历性判据</li><li>受限系统的弛豫与长时间统计</li><li>随机财富交换与 Gini index</li></ul>
+    <p class="related-reading">相关论文：<a href="{{ '/publications/#work-157208061' | relative_url }}">Ergodic criterion</a> · <a href="{{ '/publications/#work-194460814' | relative_url }}">财富交换与不平等度量</a></p>
+  </div>
+  <figure><img src="{{ '/assets/images/academic/ergodicity.svg' | relative_url }}" width="520" height="340" loading="lazy" alt="比较同一时刻多条轨迹的总体平均，与单条轨迹跨时间平均的示意图。"><figcaption>Ensemble average 与 Time average 的不同采样方式。</figcaption></figure>
+</section>
+
+<section class="research-detail" id="diffusion" aria-labelledby="diffusion-title">
+  <div class="research-text">
+    <p class="eyebrow">03 / <span lang="en">Anomalous diffusion</span></p>
+    <h2 id="diffusion-title">反常扩散</h2>
+    <p>当粒子的 Mean-squared displacement（MSD）不再与时间成正比，经典 Brownian motion 便难以完整刻画输运过程。以 MSD ∝ t<sup>α</sup> 为切入点，研究 Subdiffusion、Superdiffusion 和 Lévy walk 等非经典扩散机制。</p>
+    <p>通过 Subordination 将随机时间与空间运动联系起来，研究 Trapping、Senescence、记忆效应及演化介质中的扩散，建立 Langevin 描述与 Fokker–Planck equation 之间的联系，为物理与生物复杂介质中的输运提供数学解释。</p>
+    <ul class="topic-list"><li>等待时间与粒子固定机制</li><li>演化介质及外力场中的扩散</li><li>Fractional dynamics 与统计观测量</li></ul>
+    <p class="related-reading">相关论文：<a href="{{ '/publications/#work-189191703' | relative_url }}">Senescence effects</a> · <a href="{{ '/publications/#work-183967855' | relative_url }}">g-diffusion 的 Langevin 描述</a></p>
+  </div>
+  <figure><img src="{{ '/assets/images/academic/diffusion.svg' | relative_url }}" width="520" height="340" loading="lazy" alt="双对数坐标下 MSD 随时间增长的三条示意线：次扩散指数小于 1，正常扩散指数等于 1，超扩散指数大于 1。"><figcaption>MSD 的幂律标度示意，非实验或论文数据。</figcaption></figure>
+</section>
+
+<section class="ai-section" id="ai" aria-labelledby="ai-title">
+  <p class="eyebrow" lang="en">Cross-disciplinary exploration</p>
+  <h2 id="ai-title">与 Machine learning 和 AI 的交叉</h2>
+  <p class="measure">在上述随机模型和统计方法基础上，可进一步探索以数据辅助理解扩散机制。以下列出可开展的交叉问题，作为研究展望。</p>
+  <div class="ai-grid">
+    <div><span class="index">01</span><h3>从轨迹识别扩散机制</h3><p>利用时序模型提取短轨迹、含噪轨迹的特征，估计异常指数 α，区分 CTRW、Fractional Brownian motion 等候选机制，并识别运动状态切换。</p></div>
+    <div><span class="index">02</span><h3>结合物理约束的参数反演</h3><p>探索 Physics-informed learning，将动力学方程、边界条件与统计量作为约束，反演扩散率和记忆参数，并以数值解检验推断结果。</p></div>
+    <div><span class="index">03</span><h3>连接仿真与实验数据</h3><p>用随机模型生成有明确机制标签的训练样本，结合 Uncertainty quantification 与可解释分析，评估模型面对噪声和不同实验条件时的可靠性。</p></div>
+  </div>
+  <p class="reference-note">领域参考：<a href="https://www.nature.com/articles/s41467-021-26320-w">Objective comparison of methods to decode anomalous diffusion, <em>Nature Communications</em> 12, 6253 (2021)</a>。研究方向文字根据 ORCID 所列论文提炼；图示为本网站绘制的概念示意。</p>
+</section>

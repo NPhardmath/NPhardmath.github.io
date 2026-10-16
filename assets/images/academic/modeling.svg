@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 520 340">
+  <title>Stochastic modeling from trajectories to equations</title>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4 0 8" fill="none" stroke="#9aafc1"/></marker></defs>
+  <g fill="none" stroke="#dce5ed"><path d="M40 140H225M40 140V37M295 140H480M295 140V37"/></g>
+  <g fill="none" stroke-width="2.2" stroke-linejoin="round"><path d="M45 110l12-24 11 9 12-31 13 25 11-9 13 37 12-16 12 8 12-28 13 9 12-31 11 14 12-17 12 7" stroke="#2a608a"/><path d="M45 111l13 5 12-14 11 22 12-9 12-5 12 11 13-21 12 5 12-16 12 7 13-14 11 7 12-16 12 5" stroke="#7da0ba"/><path d="M45 111l12-4 12 13 13-9 11-4 13 9 12-3 12 13 12-2 12 6 12-12 12 4 12-8 13 7 11-1" stroke="#b09a6a"/></g>
+  <path d="M306 137C335 137 336 130 350 113S371 49 388 49 410 100 425 119 454 137 475 137" fill="#dce8f0" stroke="#2a608a" stroke-width="2.3"/>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#334e67" text-anchor="middle"><text x="130" y="168">Sample trajectories</text><text x="388" y="168">Probability density</text></g>
+  <path d="M237 92h42M133 187v27h254v-27M260 215v34" fill="none" stroke="#9aafc1" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <rect x="100" y="259" width="320" height="53" rx="4" fill="#fff" stroke="#c6d6e3"/>
+  <text x="260" y="291" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#173f63">∂ₜ p(x,t) = ℒ p(x,t)</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#72879a"><text x="48" y="35">x(t)</text><text x="299" y="35">p(x,t)</text></g>
+</svg>
