@@ -54,3 +54,16 @@ bundle exec jekyll serve
 原主题的示例页面和示例文章保留在源码中，但通过 `_config.yml` 排除，不生成至公开网站。`local/`、`vendor/`、`.bundle/`、`_site/` 均为忽略目录，不应上传。
 
 本机验证使用项目内临时 JRuby 环境、Jekyll 4.4.1 及符合 Gemfile 约束的兼容依赖，执行了 production 严格编译。使用独立 CSS 的四个页面不再编译主题原有的 Sass 样式。当前工具未提供可用浏览器，因此未做浏览器中的目视验收；已检查生成 HTML、本地链接、图片资源和实时更新的成功及失败行为。
+
+
+## 修改后推送
+每次修改后，先ctrl+s保存修改内容，然后在终端执行
+
+cd C:\Users\CLJ\NPhardmath.github.io
+git status
+git add .
+git commit -m "更新网站内容"
+git push origin master
+
+最后在源代码管理页面点击...，并选择推送。
+打开仓库 Actions 页面，查看 Deploy academic homepage to Pages。最新一次运行显示绿色勾后，访问网站内容即可
