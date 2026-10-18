@@ -57,7 +57,7 @@ bundle exec jekyll serve
 
 
 ## 修改后推送
-每次修改后，先ctrl+s保存修改内容，然后在终端执行
+每次修改后，先ctrl+s保存修改内容，然后在终端执行一下代码：
 
 cd C:\Users\CLJ\NPhardmath.github.io
 git status
