@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           :
   name             : "王旭东"
-  pronouns         : # example: "she/her"  
+  pronouns         :
   bio              : "副教授 · 博士生导师"
   location         : "南京，中国"
   employer         : "南京理工大学数学与统计学院"
@@ -165,7 +165,7 @@ include:
   - .htaccess
   - _pages
 exclude:
-  # Retain starter assets in source without publishing example papers or CVs.
+  # Retain original theme assets in source without publishing them.
   - files
   - images
   - docker-compose.yaml

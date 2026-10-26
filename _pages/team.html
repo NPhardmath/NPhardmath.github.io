@@ -5,16 +5,28 @@ english_title: "People"
 permalink: /team/
 intro: "围绕随机建模、计算数学与统计物理开展研究，在理论推导、算法实现和交叉应用中共同探索。"
 ---
-<p class="example-notice"><strong>成员信息示例</strong> {{ site.data.team.notice }}</p>
+<nav class="section-nav" aria-label="团队分类">
+  {% for group in site.data.team.groups %}
+  <a href="#{{ group.id }}">{{ group.title | escape }}<span>{{ group.members | size }} 人</span></a>
+  {% endfor %}
+</nav>
 <div class="team-groups">
   {% for group in site.data.team.groups %}
-  <section class="team-group" aria-labelledby="team-group-{{ forloop.index }}">
-    <div class="section-heading"><h2 id="team-group-{{ forloop.index }}">{{ group.title }}</h2><span class="section-english" lang="en">{{ group.english }}</span></div>
+  <section class="team-group" id="{{ group.id }}" aria-labelledby="{{ group.id }}-title">
+    <div class="section-heading"><h2 id="{{ group.id }}-title">{{ group.title | escape }}</h2><span class="section-english" lang="en">{{ group.english | escape }}</span></div>
     <div class="member-grid">
       {% for member in group.members %}
       <article class="member">
-        <span class="member-initial" aria-hidden="true">{{ member.name | slice: 0 }}</span>
-        <div><h3>{{ member.name }}</h3><p><span class="member-field">{{ group.field }}</span>{{ member.detail }}</p></div>
+        <span class="member-initial" aria-hidden="true">{{ member.name | slice: 0 | escape }}</span>
+        <div class="member-content">
+          <h3>{{ member.name | escape }}</h3>
+          <dl class="member-details">
+            {% if member.program %}<dt>培养类型</dt><dd>{{ member.program | escape }}</dd>{% endif %}
+            {% if member.research %}<dt>研究方向</dt><dd>{{ member.research | escape }}</dd>{% endif %}
+            {% if member.internship %}<dt>实习经历</dt><dd>{{ member.internship | escape }}</dd>{% endif %}
+            {% if member.destination %}<dt>毕业去向</dt><dd>{{ member.destination | escape }}</dd>{% endif %}
+          </dl>
+        </div>
       </article>
       {% endfor %}
     </div>
