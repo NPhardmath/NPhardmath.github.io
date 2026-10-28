@@ -15,7 +15,7 @@
 | 配色、排版、移动端样式 | `assets/css/academic.css` |
 | 本地研究示意图 | `assets/images/academic/` |
 
-团队信息根据用户提供的成员收集表整理，`_data/team.yml` 按博士、学硕、专硕、毕业四类维护，目前分别为 2、5、3、4 人。各成员保留已填写的研究方向、实习经历和毕业去向；表中“无”“-”等空缺标记不显示。明确填写毕业去向的成员归入毕业类，其中“本校读博”保留为硕士毕业去向。更新时调整成员所属分组及对应字段，页面分类人数自动计算。主页按用户提供的 Word 整理；邮箱取自已发表论文的公开通讯信息。两个学校参考网站本次抓取遇到防护，保留其链接，未据此补写未经验证的履历，也未使用模板头像。
+团队所有成员均为明确标注的示例。将 `_data/team.yml` 中的姓名与信息替换为真实信息后，再修改该文件的 `notice` 及 `_pages/team.html` 的“成员信息示例”标题。主页按用户提供的 Word 整理；邮箱取自已发表论文的公开通讯信息。两个学校参考网站本次抓取遇到防护，保留其链接，未据此补写未经验证的履历，也未使用模板头像。
 
 研究方向根据 ORCID 论文提炼，AI 部分是研究展望。所有 SVG 是概念示意，不是实验或论文结果。
 
@@ -51,7 +51,7 @@ bundle exec jekyll serve
 
 若只想查看本次已生成的 `_site/`，无需配置 Ruby，可运行 `python -m http.server 4000 --bind 127.0.0.1 --directory _site`，然后访问同一地址。
 
-原主题页面和文章保留在源码中，通过 `_config.yml` 排除，不生成至公开网站。`local/`、`vendor/`、`.bundle/`、`_site/` 均为忽略目录，不应上传。
+原主题的示例页面和示例文章保留在源码中，但通过 `_config.yml` 排除，不生成至公开网站。`local/`、`vendor/`、`.bundle/`、`_site/` 均为忽略目录，不应上传。
 
 本机验证使用项目内临时 JRuby 环境、Jekyll 4.4.1 及符合 Gemfile 约束的兼容依赖，执行了 production 严格编译。使用独立 CSS 的四个页面不再编译主题原有的 Sass 样式。当前工具未提供可用浏览器，因此未做浏览器中的目视验收；已检查生成 HTML、本地链接、图片资源和实时更新的成功及失败行为。
 
@@ -59,7 +59,7 @@ bundle exec jekyll serve
 ## 修改后推送
 每次修改后，先ctrl+s保存修改内容，然后在终端执行一下代码：
 
-cd C:\Users\CLJ\NPhardmath.github.io
+cd D:\Github\NPhardmath.github.io
 git status
 git add .
 git commit -m "更新网站内容"
