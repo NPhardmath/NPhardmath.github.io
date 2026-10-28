@@ -13,10 +13,10 @@ title                    : "王旭东的学术主页"
 title_separator          : "-"
 name                     : &name "王旭东"
 description              : &description "王旭东，南京理工大学数学与统计学院副教授、博士生导师。研究随机模型与算法、统计物理与反常扩散。"
-url                      : https://nphardmath.github.io
+url                      : "https://xdwangmath.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "NPhardmath/NPhardmath.github.io"
+repository               : "https://xdwangmath.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
